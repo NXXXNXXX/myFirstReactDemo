@@ -1,0 +1,106 @@
+body {
+  overflow-y: auto; /* 使用水平滚动条时自动显示 */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1000vh;
+    background-color: #264E7C; /* 设置底层背景色 */
+    color: white; /* 设置文字颜色 */
+    /*overflow: hidden; /* 隐藏超出部分 */
+    position: relative; /* 相对定位 */
+    /* z-index: 1 */
+}
+
+
+
+.text-content {
+    width: 60%; /* 文字内容宽度为页面的一半 */
+    /* position: absolute; 绝对定位 */
+    position: relative; /* 相对定位 */
+    top: 20vh; /* 使文字内容垂直居中于屏幕的3/8处 */
+    left: 25px; /* 设置水平偏移 */
+}
+
+
+
+.right-image {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  right: -250px;
+  transform: translateY(-50%);
+  
+  /* 您可以根据需要设置图片的其他样式 */
+}
+
+
+
+
+/* 按钮 */
+/* 按钮容器 */
+.button-container {
+  position: absolute; /*绝对定位 */
+  
+  top: 20px; /* 使容器位于页面顶部 */
+  left: 50%; /* 使容器水平居中于父元素 */
+  transform: translateX(-50%); /* 通过 transform 属性水平居中 */
+}
+
+  
+
+
+  
+  /* 按钮样式 */
+.button {
+  display: inline-block; /* 将按钮设为内联块级元素，以便水平排列 */
+  width: 120px; /* 按钮宽度 */
+  height: 40px; /* 按钮高度 */
+  line-height: 40px; /* 设置行高以使按钮文字垂直居中 */
+  background-color: #ccc; /* 按钮背景色 */
+  color: #fff; /* 按钮文字颜色 */
+  text-align: center; /* 文字居中 */
+  text-decoration: none; /* 去除链接默认下划线 */
+  margin-right: 10px; /* 设置按钮间距 */
+  border-radius: 20px; /* 设置边框圆润度 */
+  border: 2px solid #666; /* 边框样式和颜色 */
+  transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+  
+  /* 按钮悬停样式 */
+  .button:hover {
+    background-color: #5b70e9; /* 鼠标悬停时的背景色 */
+  }
+
+  /* 设置视频容器的样式 */
+.video-container {
+  max-width: 640px; /* 设置视频最大宽度 */
+  /* position: absolute; 绝对定位 */
+  position: relative; /* 相对定位 */
+  top: 40vh; /* 使文字内容垂直居中于屏幕的3/8处 */
+  left: 150px; /* 设置水平偏移 */
+}
+
+/* 设置视频的样式 */
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+video {
+  margin-top: 150px; /* 从顶部向下偏移 50 像素 */
+  position: absolute;
+  top: 100vh; /* 使文字内容垂直居中于屏幕的3/8处 */
+  left: 125px; /* 设置水平偏移 */
+  transform: translateY(-50%); /* 通过负的50%的 translateY 将视频向上偏移自身高度的一半，使其垂直居中 */
+  /* 其他样式 */
+}
+
+

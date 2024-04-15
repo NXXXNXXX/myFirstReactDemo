@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d5888; /* 设置底层背景色 */
+    color: white; /* 设置文字颜色 */
+    overflow: hidden; /* 隐藏超出部分 */
+    position: relative; /* 相对定位 */
+}
+
+.text-content {
+    width: 60%; /* 文字内容宽度为页面的一半 */
+    position: absolute; /* 绝对定位 */
+    top: 20vh; /* 使文字内容垂直居中于屏幕的3/8处 */
+    left: 45px; /* 设置水平偏移 */
+}
+
+
+
+
+
